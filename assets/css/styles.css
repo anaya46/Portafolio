@@ -14,9 +14,8 @@ body{
 }
 nav{
     display: flex;
-    justify-content: space-between;
-    height: 50px;
-    padding: 0.5rem ;
+    justify-content: space-evenly;
+    height: 100px;
     background-color: transparent;
    
 }
@@ -27,8 +26,8 @@ input#menu-hamburguesa ~ ul{
     position: absolute;
     width: 100%;
     right: 0;
-    height:calc( 100vh - 50px );
-    top:60px;
+    height:calc( 100vh - 100px );
+    top:40px;
     flex-direction: column;
     align-items: start;
     gap: .5rem;
@@ -47,7 +46,7 @@ html{
 }
 
 @media screen and (min-width: 860px) {
- nave label{
+ nav label{
        display: none;
    } 
     input#menu-hamburguesa ~ ul {
@@ -57,12 +56,17 @@ html{
         flex-direction: row;
         height: auto;
         justify-content: center ;
-       
-        
+        list-style: none;
        
     }   
     .contacto{
         justify-content: space-evenly;
+    }
+    .fondo-foto{
+        width: 50vw;
+    }
+    .saludo{
+        width: 50vw;
     }
     
  }
