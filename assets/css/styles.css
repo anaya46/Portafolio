@@ -269,25 +269,18 @@ section#acerca{
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem;
-    
+    gap: 1rem;
+    margin-right: .5rem;
    
-    
    }
-   .logros{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1rem;
-    justify-content: space-between;
-    font-weight: bold;
-    line-height: 1.5rem;
-
-   }
+   
+   
  .barra1{
     height: 5px;
-    width: 25vw;
+    width: 100vw;
     background-color: #e5e5e5;
     border-radius: 1rem;
-    margin: 10px 0;
+    margin-bottom: 1rem;
     color: #34b0BE;
    
    
@@ -303,11 +296,12 @@ section#acerca{
 }
 .barra2{
     height: 5px;
-    width: 25vw;
+    width: 100vw;
     background-color: #e5e5e5;
     border-radius: 1rem;
-    margin: 10px 0;
+    margin-bottom: 1rem;
     color: #34b0BE;
+    
   
 }
 
@@ -321,10 +315,10 @@ section#acerca{
 }
 .barra3{
     height: 5px;
-    width: 25vw;
+    width: 100vw;
     background-color: #e5e5e5;
     border-radius: 1rem;
-    margin: 10px 0;
+  
     color: #34b0BE;
    
 
@@ -339,7 +333,7 @@ section#acerca{
     
 }
 .porc{
-   padding-left: 1rem;
+   padding-left: 5rem;
 }
 
    .imagenes-proy{
