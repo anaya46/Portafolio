@@ -17,6 +17,7 @@ nav{
     justify-content: space-evenly;
     height: 100px;
     background-color: transparent;
+    font-size: 12px;
    
 }
 input#menu-hamburguesa{
@@ -45,32 +46,7 @@ html{
     scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 860px) {
- nav label{
-       display: none;
-   } 
-    input#menu-hamburguesa ~ ul {
-        position:static;
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        justify-content: center ;
-        list-style: none;
-       
-    }   
-    .contacto{
-        justify-content: space-evenly;
-    }
-    .fondo-foto{
-        width: 50vw;
-    }
-    .saludo{
-        width: 50vw;
-    }
-    
- }
-    
+  
 
 nav > div > img{
     width: 150px;
@@ -94,6 +70,10 @@ nav > ul > a > li:hover{
   
    
 }
+nav > ul > a {
+    text-decoration: none;
+ 
+ }
 main img{
     width: 300px;
 }
@@ -223,38 +203,41 @@ section#acerca{
    .describe{
     grid-column-start: 1;
     grid-column-end: -1;
+    grid-row-start: 2;
     grid-row-end: 3;
     padding-left:  .5rem;
     line-height: 1.5rem;
-
+    margin-top: 1.5rem;
    }
-   .logo1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 4;
-    padding-top: 2rem;
-    width: 5rem;
-    margin-left: 3rem;
-   }
-   .logo2{
+  .puntos{
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+
+  }
+  
+   .logo2{
+    grid-column-start: 1;
+    grid-column-end: -1;
     grid-row-end: 4;
     width: 6rem;
     margin-top: .5rem;
+    margin-left: 13rem;
+    
    }
-   .uvm{
-    grid-column: 1 / 2;
-    grid-row-end: 5;
-    margin-left: 4rem;
-   }
+   
    .academlo{
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
     grid-row-end: 5;
-    margin-left: .5rem;
+    margin-left: 13.5rem;
    }
-   .year1{
+   
+   .year2{
+    grid-column: 1 / -1;
     margin-left: 2.5rem;
+    margin-left: 13rem;
    }
 
    .hab{
@@ -281,7 +264,7 @@ section#acerca{
    
  .barra1{
     height: 5px;
-    width: 100vw;
+    width: 98vw;
     background-color: #e5e5e5;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -300,7 +283,7 @@ section#acerca{
 }
 .barra2{
     height: 5px;
-    width: 100vw;
+    width: 98vw;
     background-color: #e5e5e5;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -319,7 +302,7 @@ section#acerca{
 }
 .barra3{
     height: 5px;
-    width: 100vw;
+    width: 98vw;
     background-color: #e5e5e5;
     border-radius: 1rem;
   
@@ -339,7 +322,10 @@ section#acerca{
 .porc{
    padding-left: 5rem;
 }
+    .portafolio{
+    padding: .5rem;
 
+}
    .imagenes-proy{
        display: grid;
        grid-template-columns: 1fr;
@@ -353,15 +339,6 @@ section#acerca{
        object-fit: cover;
        
        }
-    
-
-
-    @media screen and (min-width: 600px){
-        .imagenes-proy{
-            grid-template-columns: 1fr 1fr ;
-           
-        }
-    }   
     .contacto{
         display: flex;
         justify-content: center;
@@ -385,4 +362,83 @@ section#acerca{
         text-align: center;
         color: #34b0BE;
     }
+    @media screen and (min-width: 600px){
+        .imagenes-proy{
+            grid-template-columns: 1fr 1fr ;
+           
+        }}
+    @media screen and (min-width: 860px) {
+        nav label{
+              display: none;
+          } 
+           input#menu-hamburguesa ~ ul {
+               position:static;
+               background-color: transparent;
+               display: flex;
+               flex-direction: row;
+               height: auto;
+               justify-content: center ;
+               list-style: none;
+              
+           }   
+           .contacto{
+               justify-content: space-evenly;
+           }
+           section#home{
+              
+               display: flex;
+               
+                       
+              }
+           
+           .fondo-foto{
+             
+            width: 950px;
+              
+           }
+           .foto{
+               right: calc( 50% - 850px ); 
+               width: 20rem; 
+           }
+           .saludo{
+                 max-width: 50%;
+                line-height: 5rem;   
+                margin-right: 28rem;    
+
+           }
+           .hola{
+               font-size: 46px;
+               font-family: semibold;
+           }
+           .titulo{
+               font-size: 52px;
+               font-family: semibold;
+           }
+           .describe{
+              margin-right: 5rem;
+           }
+           section#acerca{
+               width: 100vw;  
+               font-size: 16px;
+           } 
+           .puntos{
+               margin-left: 500px;
+               width: 20vw;
+        }
+        .logo2{
+            margin-left: 40vw;
+        }
+        .academlo{
+            margin-left: 41vw;
+        }
+        .year2{
+            margin-left: 42vw;
+        }
+        .redes{
+            width: 36px;
+            height: 36px;
+        }
+           
+           
+       } 
     
