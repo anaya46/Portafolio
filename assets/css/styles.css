@@ -10,7 +10,9 @@
 body{
  background-color:#ffffff ;
  font-family: 'Rubik', sans-serif;
- 
+}
+ img{
+    max-width: 98%;
 }
 nav{
     display: flex;
@@ -85,11 +87,16 @@ header{
 section#home{
     background-color:#ffffff ;
     display: grid;
-    padding: 4rem .5rem;
+    padding: 2.3rem .5rem;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 
     
+   }
+   .saludo{
+       flex-direction: column;
+       justify-content: center;
+       text-align: left;
    }
 
 .fondo-foto{
@@ -133,6 +140,13 @@ section#home{
     margin: .3rem;
 
 }
+
+a{
+    text-decoration: none;
+}
+
+
+
 .contactame{
     background-color: #ff4f6f;
     border-color: transparent;
@@ -141,18 +155,16 @@ section#home{
    text-align: center;
   
     border-radius: 0 15px 15px 0;
-    
+     cursor: pointer;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    padding: 0.5rem 2rem 0.5rem 1rem;
 }
+
 .letter{
-    margin-left: 15px;
     margin-right: 15px;
     text-align: center;
-    padding-top: .5rem;
-   
-}
-.enlace{
-   color: transparent;
-   
 }
 
 
@@ -393,25 +405,25 @@ section#acerca{
            
            .fondo-foto{
              
-            width: 950px;
-              
+            width: 1000px;
+             margin-left: 10rem;
            }
            .foto{
                right: calc( 50% - 850px ); 
                width: 20rem; 
            }
            .saludo{
-                 max-width: 50%;
+                max-width: 50%;
                 line-height: 5rem;   
-                margin-right: 28rem;    
+                margin-right: 20rem;    
 
            }
            .hola{
-               font-size: 46px;
+               font-size: 48px;
                font-family: semibold;
            }
            .titulo{
-               font-size: 52px;
+               font-size: 56px;
                font-family: semibold;
            }
            .describe{
