@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;600&display=swap');
+
+:root {
+    --color-bg: #faf7f0;
+    --color-font: #181818;
+    --color-principal: #e1b5a1;
+    --z-navbar: 5000;
+    --z-icon-menu: 4000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-font);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.darkTheme {
+    --color-bg: #181818;
+    --color-font: #faf7f0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.iconShowMenu {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: var(--z-icon-menu);
+    display: none;
+}
+
+.container__principal {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 50px;
+    background-color: var(--color-bg);
+    box-shadow: 0 0.5rem 1rem rgba(0, -0, -0, -0.15);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: var(--z-navbar)
+}
+
+.iconTheme {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.navBar__menu {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width:700px) {
+    .navBar__menu {
+        background-color: var(--color-bg);
+        position: fixed;
+        top: 50px;
+        left: 0;
+        height: 100vh;
+        width: 40vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0.5rem 1rem rgba(0, -0, -0, -0.15);
+        transform: translateX(-200%);
+        transition: transform 0.5s;
+    }
+
+    .navBar__menu--show {
+        transform: translateX(0);
+    }
+
+
+
+    .iconShowMenu {
+        display: block;
+    }
+
+}
+
+.redes {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #34b0BE;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+
+}
+
+.p-redes {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+
+}
+
+.link {
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+}
+
+.link__active {
+    background-color: var(--color-principal);
+}
+
+section {
+    min-height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.home__title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.home__title span {
+    color: var(--color-principal);
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.logo {
+    width: 7rem;
+    margin-top: 0.8rem;
+}
+
+.about__img {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 15%;
+    margin-top: 0.5rem;
+}
+
+.about__text {
+    line-height: 1.5rem;
+}
+
+.btn-download {
+    background-color: var(--color-principal);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    display: block;
+    width: 200px;
+    margin: 0.5rem auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.portfolios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.form input,
+.form textarea {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border: 2px solid var(--color-principal)
+}
+
+.btn {
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(min-width:800px) {
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 1fr;
+        gap: 3rem;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+}
+
+/*---------*/
+.hidden {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Sandra Anaya</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+   <script defer src="./main.js"></script>
+</head>
+<body class="darkTheme">
+    <i class='iconShowMenu bx bx-menu'></i>
+    <nav class="navBar">
+        <span class="logo"><a href="#">
+                <img src="./assets/images/logoSandraF.png" alt="">
+             </a>
+        </span>
+        <ul class="navBar__menu " >
+            <li><a  class="link link__active" href="#home">Inicio</a></li>
+            <li><a class="link" href="#about">Sobre Mi</a></li>
+            <li><a class="link" href="#portfolio">Portafolio</a></li>
+            <li><a class="link" href="#contact">Contacto</a></li>
+            <li 
+                <i class='bx bx-sun iconTheme 'id="sun-button"></i>
+            </li>
+        </ul>
+    </nav>
+    <main class="container__principal">
+        <section id="home" class="hidden">
+            <h1 class="home__title">Hola, soy <span>Sandra Anaya, </span><br><span>Desarrolladora web</span>  </h1>
+            <div class="p-redes">
+                <a href="https://www.linkedin.com/in/sandra-anaya-7300231a6/">
+                  <img class="redes" src="./assets/images/cib_linkedin-in.svg" alt="linkendin">
+                </a>
+                <a  href="mailto:sandraanaya46@hotmail.com">
+                    <img class="redes" src="./assets/images/panorama.png" alt="hotmail">
+                </a> 
+                <a  href="https://github.com/anaya46">
+                    <img class="redes" src="./assets/images/github.png" alt="github">
+                </a> 
+            </div>  
+        </section>
+        <section id="about" class="hidden">
+            <h2>Sobre mi</h2>
+            <p class="about__text"> Desarrolladora web, con conocimientos en HTML, CSS, Javascript, React y NodeJs. <br>  Profesional en transición con inmensos deseos de crecer en el mundo de la programación. <br>Mujer perseverante en el alcance de metas, con experiencia en el manejo de talento humano.</p>
+            <div class="about__img">
+                <img src="./assets/images/FOTO SANDRA ANAYA 300px.png" alt="">
+            </div>   
+            <a href="" download class="btn-download">Descargar CV</a> 
+        </section>
+
+        <section id="portfolio" class="hidden">
+            <h2>Portafolio</h2>
+            <div class="portfolios">
+                <a href="https://neon-zuccutto-1b1876.netlify.app/"> PokeApi
+                    <img src="./assets/images/imagen pokedex.png" alt="PokeApi">
+                </a>
+               
+                <a href="https://spiffy-horse-8ebf18.netlify.app/"> Ecommerce
+                    <img src="./assets/images/ecommerce img.png" alt="Ecommerce">
+                 </a>
+          </div>  
+
+            
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contáctame</h2>
+            <form class="form" data-netlify="true"> 
+                <input type="text" placeholder="Ingresa tu nombre" name="nameUser" id="nameUser" required>
+                <input type="email" placeholder="Ingresa tu correo" name="emailUser" id="emailUser" required>
+                <textarea name="commentUser" id="commentUser" placeholder="Escribeme"cols="30" rows="10"></textarea>
+                <button class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    
+
+</body>
+</html>
